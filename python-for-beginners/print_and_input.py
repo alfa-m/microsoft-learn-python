@@ -25,4 +25,3 @@ print('Dividing numbers')
 # y = x / 0
 y = x / 2
 print('End of calculations')
-
