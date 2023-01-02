@@ -1,4 +1,4 @@
-# Date (15) 
+# Date (15-16) 
 
 ## Importing the datetime function from datetime library
 from datetime import datetime
@@ -38,7 +38,18 @@ print(arbitrary_yesterday)
 ## Catching parts of a date
 arbitrary_day = arbitrary_date.day
 print('Day: ', arbitrary_day)
+
 arbitrary_month = arbitrary_date.month
 print('Month: ', arbitrary_month)
+
 arbitrary_year = arbitrary_date.year
 print('Year: ', arbitrary_year)
+
+arbitrary_hour = arbitrary_date.hour
+print('Hour: ', arbitrary_hour)
+
+arbitrary_minute = arbitrary_date.minute
+print('Minute: ', arbitrary_minute)
+
+arbitrary_second = arbitrary_date.second
+print('Second: ', arbitrary_second)
