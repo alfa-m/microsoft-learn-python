@@ -7,7 +7,7 @@ from datetime import datetime
 from datetime import timedelta
 
 ## Alternative import of both datetime and timedelta
-## from datetime import datetime, timedelta
+# from datetime import datetime, timedelta
 
 ## Showing the current date and time
 right_now = datetime.now()
