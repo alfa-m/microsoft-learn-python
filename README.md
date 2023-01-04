@@ -1,6 +1,6 @@
 # Python courses available at Microsoft Learn
 
-This repo contaisn my reproduction of the python examples available at [Microsoft Learn](https://learn.microsoft.com/en-us/)
+This repo contaisn my reproduction of the python examples available at [Microsoft Learn](https://learn.microsoft.com/en-us/).
 
 ## Table of content
 
