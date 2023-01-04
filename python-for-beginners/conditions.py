@@ -11,6 +11,7 @@ final_price_fish = (1 + tax_fish) * price_fish
 
 print('Tax rate: ', tax_fish)
 print('Final price of the fish: ', final_price_fish)
+print()
 
 ## If-else
 price_purchase = float(input('How much is the purchase? '))
@@ -24,33 +25,38 @@ final_price_purchase = (1 + tax_purchase) * price_purchase
 
 print('Tax rate: ', tax_purchase)
 print('Final price of the purchase: ', final_price_purchase)
+print()
 
 ## If-elif
 ingredients = 'bread + meat + lettuce'
 extra_flavor = input('Enter an extra flavor: ')
 
 if extra_flavor.lower() == 'cheese':
-    print(ingredients, '+ cheese')
+    ingredients = ingredients + ' + cheese'
 elif extra_flavor.lower() == 'bacon':
-    print(ingredients, '+ bacon')
+    ingredients = ingredients + ' + bacon'
 elif extra_flavor.lower() == 'sausage':
-    print(ingredients, '+ sausage')
+    ingredients = ingredients + ' + sausage'
 elif extra_flavor.lower() == 'ham':
-    print(ingredients, '+ ham')
+    ingredients = ingredients + ' + ham'
 elif extra_flavor.lower() == 'eggs':
-    print(ingredients, '+ eggs')
+    ingredients = ingredients + ' + eggs'
+
+print(ingredients)
+print()
 
 ## If-elif-else
 color = input('Choose a color: ')
 
 if color.lower() == 'blue':
-    print(color, 'is a primary color')
+    print(color.capitalize(), 'is a primary color')
 elif color.lower() == 'red':
-    print(color, 'is a primary color')
+    print(color.capitalize(), 'is a primary color')
 elif color.lower() == 'yellow':
-    print(color, 'is a primary color')
+    print(color.capitalize(), 'is a primary color')
 else:
-    print(color, 'is not a primary color')
+    print(color.capitalize(), 'is not a primary color')
+print()
 
 ### OR condition
 province = input('Where are you from? ')
@@ -63,6 +69,7 @@ else:
     province_tax = 0.15
 
 print('Tax rate: ', province_tax)
+print()
 
 ### Check a list of conditions
 fruit = input('What fruit do you want? ')
@@ -76,36 +83,39 @@ else:
     message = 'Fruit not available'
 
 print(message)
+print()
 
 ### Nested condition
-home_country = input('Where did you come from? ')
-price_poutine = float(input('How much is the poutine? '))
+home_country = input('Which country did you come from? ')
 
-if home_country.lower() == 'canada':   
-    if price_poutine >= 5.00:
+if home_country.lower() == 'canada':
+    price_poutine = float(input('How much is the poutine? '))
+
+    if price_poutine >= 7.00:
         tax_poutine = 0.05
     else:
         tax_poutine = 0.02
+
+    final_price_poutine = (1 + tax_poutine) * price_poutine
+
+    print('Tax rate: ', tax_poutine)
+    print('Final price of the fish: ', final_price_poutine)
 else:
     print('You cannot buy poutine')
-
-final_price_poutine = (1 + tax_poutine) * price_poutine
-
-print('Tax rate: ', tax_poutine)
-print('Final price of the fish: ', final_price_poutine)
+print()
 
 ### AND condition
 gpa = float(input('What is your GPA? '))
 low_grade = float(input('What is your lowest score? '))
 
-if gpa >= 0.85 and low_grade >= 0.70:
+if gpa >= 8.5 and low_grade >= 7.0:
     print('Congratulations!')
 else:
     print("Sorry, you'll have to try again")
-
+print()
 
 ### Boolean variables
-pilot = input('What is your age? ')
+pilot = int(input('What is your age? '))
 
 if pilot >= 16:
     can_drive = True
@@ -114,4 +124,4 @@ else:
 
 if can_drive:
     print('Go drive!')
-    
+  
