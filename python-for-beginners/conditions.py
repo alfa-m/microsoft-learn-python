@@ -26,30 +26,31 @@ print('Tax rate: ', tax_purchase)
 print('Final price of the purchase: ', final_price_purchase)
 
 ## If-elif
-province = input('Where are you from? ')
+ingredients = 'bread + meat + lettuce'
+extra_flavor = input('Enter an extra flavor: ')
 
-if province.capitalize() == 'Alberta':
-    province_tax = 0.05
-elif province.capitalize() == 'Yukon':
-    province_tax = 0.05
-elif province.capitalize() == 'Ontario':
-    province_tax = 0.13
-
-print('Tax rate: ', province_tax)
+if extra_flavor.lower() == 'cheese':
+    print(ingredients, '+ cheese')
+elif extra_flavor.lower() == 'bacon':
+    print(ingredients, '+ bacon')
+elif extra_flavor.lower() == 'sausage':
+    print(ingredients, '+ sausage')
+elif extra_flavor.lower() == 'ham':
+    print(ingredients, '+ ham')
+elif extra_flavor.lower() == 'eggs':
+    print(ingredients, '+ eggs')
 
 ## If-elif-else
-province = input('Where are you from? ')
+color = input('Choose a color: ')
 
-if province.capitalize() == 'Alberta':
-    province_tax = 0.05
-elif province.capitalize() == 'Yukon':
-    province_tax = 0.05
-elif province.capitalize() == 'Ontario':
-    province_tax = 0.13
+if color.lower() == 'blue':
+    print(color, 'is a primary color')
+elif color.lower() == 'red':
+    print(color, 'is a primary color')
+elif color.lower() == 'yellow':
+    print(color, 'is a primary color')
 else:
-    province_tax = 0.15
-
-print('Tax rate: ', province_tax)
+    print(color, 'is not a primary color')
 
 ### OR condition
 province = input('Where are you from? ')
@@ -64,16 +65,17 @@ else:
 print('Tax rate: ', province_tax)
 
 ### Check a list of conditions
-province = input('Where are you from? ')
+fruit = input('What fruit do you want? ')
 
-if province in ('Alberta', 'Yukon', 'Nunavut'):
-    province_tax = 0.05
-elif province.capitalize() == 'Ontario':
-    province_tax = 0.13
+if fruit.lower() in ('pineapple',
+                     'orange',
+                     'strawberry',
+                     'lemon'):
+    message = 'Fruit available'
 else:
-    province_tax = 0.15
+    message = 'Fruit not available'
 
-print('Tax rate: ', province_tax)
+print(message)
 
 ### Nested condition
 home_country = input('Where did you come from? ')
@@ -93,15 +95,23 @@ print('Tax rate: ', tax_poutine)
 print('Final price of the fish: ', final_price_poutine)
 
 ### AND condition
-home_country = input('Where did you come from? ')
-price_poutine = float(input('How much is the poutine? '))
+gpa = float(input('What is your GPA? '))
+low_grade = float(input('What is your lowest score? '))
 
-if home_country.lower() == 'canada' and price_poutine >= 5.00:
-    tax_poutine = 0.05
+if gpa >= 0.85 and low_grade >= 0.70:
+    print('Congratulations!')
 else:
-    print('You cannot buy poutine')
+    print("Sorry, you'll have to try again")
 
-final_price_poutine = (1 + tax_poutine) * price_poutine
 
-print('Tax rate: ', tax_poutine)
-print('Final price of the fish: ', final_price_poutine)
+### Boolean variables
+pilot = input('What is your age? ')
+
+if pilot >= 16:
+    can_drive = True
+else:
+    can_drive = False
+
+if can_drive:
+    print('Go drive!')
+    
