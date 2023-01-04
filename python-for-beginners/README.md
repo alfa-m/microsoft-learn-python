@@ -9,3 +9,4 @@
 - Videos 13-14: [Using numbers](numbers.py)
 - Videos 15-16: [Date handling](dates.py)
 - Videos 17-18: [Error handling](error_handling.py)
+- Videos 19-24: [Conditional structures](conditions.py)
