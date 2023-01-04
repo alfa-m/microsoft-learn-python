@@ -1,4 +1,4 @@
-# String manipulation (9-14)
+# String manipulation (9-12)
 
 ## Concatenating strings
 first_name = input('What is your first name? ')
