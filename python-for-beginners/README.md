@@ -11,3 +11,4 @@
 - Videos 17-18: [Error handling](error_handling.py)
 - Videos 19-24: [Conditional structures](conditions.py)
 - Videos 25-26: [Types of collections](data_collections.py)
+- Videos 27-28: [Loop structures](loops.py)
