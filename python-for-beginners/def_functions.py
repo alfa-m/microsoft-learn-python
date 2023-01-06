@@ -1,4 +1,4 @@
-# Defining functions (29-30)
+# Defining functions (29-32)
 
 # Function with no parameter
 ## Function that says hello
@@ -33,6 +33,6 @@ show_runtime()
 
 first_variable = float(input('Enter the first number: '))
 second_variable = float(input('Enter the second number: '))
-results = calculator(first_variable, second_variable)
+results = calculator(var_a = first_variable, var_b = second_variable)
 print(results)
 show_runtime('Calculated the sum, subtraction, multiplication and division')
