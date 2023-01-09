@@ -1,5 +1,4 @@
 .vscode
+.env
 venv
 __pycache__
-api_example.py
-swiss_cheese.jpg
