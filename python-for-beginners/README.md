@@ -20,3 +20,4 @@
   - [Requirements file](requirements.txt)
 - Videos 36-41: [API and Keys](api_example.py)
 - Videos 38-39: [JSON](json_example.py)
+- Videos 42-43: [Decorators](decorator_example.py)
