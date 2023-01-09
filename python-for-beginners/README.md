@@ -18,3 +18,5 @@
   - [Auxiliar file 1](sample_module_1.py)
   - [Auxiliar file 2](sample_module_2.py)
   - [Requirements file](requirements.txt)
+- Videos 36-41: [API and Keys](api_example.py)
+- Videos 38-39: [JSON](json_example.py)
