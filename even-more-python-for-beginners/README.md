@@ -4,7 +4,11 @@
 
 ## Topics:
 
-- Videos 3-4: [Anaconda]()
+- Anaconda
+- Jupyter Notebook
+- Pandas
+- NumPy
+- Matplotlib
 
 ## What's next
 
